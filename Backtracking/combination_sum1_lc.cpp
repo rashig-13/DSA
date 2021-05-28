@@ -1,4 +1,4 @@
-// you can take any no. from given vector unlimited # times.
+// you can take any no. from given vector unlimited # times. No duplicates in i/p
 class Solution {
 public :
     
