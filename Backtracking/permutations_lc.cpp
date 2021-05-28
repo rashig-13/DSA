@@ -1,3 +1,4 @@
+// #Heap's Algorithm
 class Solution {
 public:
     void solve(vector<int>& v,vector<vector<int>> &ans,int ind){
