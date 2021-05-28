@@ -1,3 +1,4 @@
+// you can take any no. from given vector unlimited # times.
 class Solution {
 public :
     
