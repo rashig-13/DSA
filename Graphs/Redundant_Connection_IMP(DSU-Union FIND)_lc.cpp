@@ -4,6 +4,7 @@ You are given a graph that started as a tree with n nodes labeled from 1 to n, w
 
 Return an edge that can be removed so that the resulting graph is a tree of n nodes. If there are multiple answers, return the answer that occurs last in the input.
 
+// DETECTING THE CYCLE IN UNDIRECTED GRAPH
 class Solution {
 public:
     int find(vector<int> &parent,int i){
