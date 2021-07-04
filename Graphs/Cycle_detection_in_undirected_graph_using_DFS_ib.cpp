@@ -16,7 +16,7 @@ bool hascycle(int node,int parent,vector<int> ad[],vector<bool> &vis,int n){
 int Solution::solve(int n, vector<vector<int> > &v) {
     int m=v.size();
     vector<int> ad[n+1];
-vector<bool> vis(n+1,0);
+    vector<bool> vis(n+1,0);
     for(int i=0;i<m;i++){
       int x=v[i][0],y=v[i][1];
       ad[x].push_back(y);
