@@ -37,3 +37,9 @@ vector<int> Solution::solve(int n, vector<vector<int> > &v) {
     }
     return ans;
 }
+
+Applications: 
+Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. 
+In computer science, applications of this type arise in instruction scheduling, ordering of formula cell evaluation
+when recomputing formula values in  spreadsheets, logic synthesis, determining the order of compilation tasks to 
+perform in make files,  data serialization, and resolving symbol dependencies in linkers.
