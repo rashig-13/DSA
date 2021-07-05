@@ -11,7 +11,7 @@ void topo (int node,vector<int> ad[],vector<bool> &vis,stack<int> &st){
         }
     }
     st.push(node);
-    return false;
+    
 }
 
 vector<int> Solution::solve(int n, vector<vector<int> > &v) {
