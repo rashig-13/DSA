@@ -1,4 +1,5 @@
 Just use priority_queue and rest is same.
+Can be used for both directed and undirected graph.
 
 vector<int> Solution::solve(int n, vector<vector<int> > &v,int src){
     vector<pair<int,int>> ad[n+1];
@@ -18,7 +19,7 @@ vector<int> Solution::solve(int n, vector<vector<int> > &v,int src){
         pq.pop();
         for(auto ch : ad[node]){
             if(x+ ch.second < dist[ch.first]){
-                dist[ch.first] = x+dist[ch.second];
+                dist[ch.first] = x+ch.second;
                 pq.push({dist[ch.first],ch.first});
             }
         }
