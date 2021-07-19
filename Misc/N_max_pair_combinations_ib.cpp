@@ -7,7 +7,9 @@ and maximum 2 elements are 6, 5
 // not sorted and same size of both arrays
 vector<int> Solution::solve(vector<int> &a, vector<int> &b) {
     int n=a.size();
-    priority_queue<pair<int,pair<int,int>>> pq;
+    sort(a.begin(),a.end(),greater<int>());
+    sort(b.begin(),b.end(),greater<int>());
+    priority_queue<pair<int,pair<int,int> > > pq;
     vector<int> ans;
     for(int i=0;i<n;i++){
         pq.push({a[i]+b[0],{i,0}});
@@ -15,8 +17,8 @@ vector<int> Solution::solve(vector<int> &a, vector<int> &b) {
     while(ans.size()<n){
         pair<int,pair<int,int>> temp=pq.top();
         pq.pop();
-        int i=pq.second.first;
-        int j=pq.second.second;
+        int i=temp.second.first;
+        int j=temp.second.second;
         ans.push_back(temp.first);
         pq.push({a[i]+b[j+1],{i,j+1}});
     }
