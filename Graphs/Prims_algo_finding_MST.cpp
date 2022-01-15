@@ -1,7 +1,7 @@
 Undirected weighted graph.
 // node indexes from 0 to n-1.
 
-Brute force => TC : > O( N^2)
+Brute force => TC : > O(> N^2)
 vector<int> Solution::solve(int n, vector<vector<int> > &v){
     vector<pair<int,int>> ad[n];
     for(int i=0;i<v.size();i++){

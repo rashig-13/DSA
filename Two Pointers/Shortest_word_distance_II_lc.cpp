@@ -5,7 +5,7 @@ Implement the WordDistance class:
 WordDistance(String[] wordsDict) initializes the object with the strings array wordsDict.
 int shortest(String word1, String word2) returns the shortest distance between word1 and word2 in the array wordsDict.
 
-//using two pointers
+//using two pointers approach
 class WordDistance {
 public:
     unordered_map<string,vector<int>> mp;
