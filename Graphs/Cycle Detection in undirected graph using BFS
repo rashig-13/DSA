@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+  public:
+    bool isCycle(int n, vector<int> adj[]) {
+        vector<int> vis(n,0);
+        queue<pair<int,int>> q;
+        for(int i=0;i<n;i++){
+            if(vis[i]==0){
+                vis[i]=1;
+                q.push({-1,i});
+                while(!q.empty()){
+                    int par=q.front().first;
+                    int node=q.front().second;
+                    q.pop();
+                    for(auto ch: adj[node]){
+                        if(vis[ch]==0){
+                            vis[ch]=1;
+                            q.push({node,ch});
+                        }
+                        else if(ch!=par){
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+};
